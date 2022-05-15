@@ -29,10 +29,12 @@ modules:
         url: https://github.com/phandasm/waveform.git
         tag: v1.3.0-flatpak
         commit: d5eb5359c672a8b44b47a8feb28cfe0a3babd992
-        # Re-enable FEDC after the next release
-        #x-checker-data:
-        #  type: git
-        #  tag-pattern: ^(v[\d.]+)$
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/phandasm/waveform/releases/latest
+          tag-query: .tag_name
+          version-query: $tag | sub("^v"; "")
+          timestamp-query: .published_at
 
     modules:
       - shared-modules/linux-audio/fftw3f.json
