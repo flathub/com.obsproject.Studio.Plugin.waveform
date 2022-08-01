@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/phandasm/waveform.git
-        tag: v1.4.1
-        commit: f827e5a7930e36486a1fb22a913cfa615c5a6926
+        tag: v1.4.0
+        commit: bac2aecea0b909dd059b77e3485fa58f1339b17a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/phandasm/waveform/releases/latest
