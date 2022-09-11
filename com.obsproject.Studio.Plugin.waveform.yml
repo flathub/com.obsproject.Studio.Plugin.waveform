@@ -2,7 +2,7 @@ id: com.obsproject.Studio.Plugin.waveform
 branch: stable
 runtime: com.obsproject.Studio
 runtime-version: stable
-sdk: org.kde.Sdk//5.15-21.08
+sdk: org.kde.Sdk//6.3
 build-extension: true
 separate-locales: false
 appstream-compose: false
@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/phandasm/waveform.git
-        tag: v1.4.1
-        commit: f827e5a7930e36486a1fb22a913cfa615c5a6926
+        tag: v1.5.0
+        commit: b2ab2c53256c67914c3c5d68c805b82fdb0aa2de
         x-checker-data:
           type: json
           url: https://api.github.com/repos/phandasm/waveform/releases/latest
@@ -32,4 +32,3 @@ modules:
 
     modules:
       - shared-modules/linux-audio/fftw3f.json
-
