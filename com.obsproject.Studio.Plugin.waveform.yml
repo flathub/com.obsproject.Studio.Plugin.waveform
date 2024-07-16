@@ -2,7 +2,7 @@ id: com.obsproject.Studio.Plugin.waveform
 branch: stable
 runtime: com.obsproject.Studio
 runtime-version: stable
-sdk: org.kde.Sdk//6.5
+sdk: org.kde.Sdk//6.6
 build-extension: true
 separate-locales: false
 appstream-compose: false
@@ -29,6 +29,8 @@ modules:
           tag-query: .tag_name
           version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
+      - type: patch
+        path: ignore-symbol-check.patch
 
     modules:
       - shared-modules/linux-audio/fftw3f.json

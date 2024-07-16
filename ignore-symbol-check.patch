@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 447871b..55ed691 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -225,7 +225,7 @@ if(APPLE)
+ endif()
+
+ set(CMAKE_REQUIRED_LIBRARIES OBS::libobs)
+-check_symbol_exists(obs_properties_add_color_alpha "obs-module.h" HAVE_OBS_PROP_ALPHA)
++set(HAVE_OBS_PROP_ALPHA, ON)
+ configure_file("src/waveform_config.hpp.in" "include/waveform_config.hpp")
+ if(WIN32)
+     configure_file("installer/installer.iss.in" "${CMAKE_CURRENT_SOURCE_DIR}/installer/installer.iss" @ONLY)
