@@ -2,7 +2,7 @@ id: com.obsproject.Studio.Plugin.waveform
 branch: stable
 runtime: com.obsproject.Studio
 runtime-version: stable
-sdk: org.kde.Sdk//6.5
+sdk: org.kde.Sdk//6.6
 build-extension: true
 separate-locales: false
 appstream-compose: false
@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/phandasm/waveform.git
-        tag: v1.8.0
-        commit: 7160340793ec4db1e0929d06a4464e7787726d69
+        tag: v1.8.1
+        commit: 7377ef097315546b2c0e1e0307443da270564b0b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/phandasm/waveform/releases/latest
